@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import {
-  Search, Filter, Download, ChevronRight, ChevronDown, Plus,
+  Search, Download, ChevronRight, ChevronDown, Plus,
   Users, HardHat, MapPin, Shield, CreditCard, DollarSign,
   FileText, AlertTriangle, Check, Clock, User, Briefcase,
   Building2, Lock, Mail, Phone,
@@ -521,10 +521,6 @@ export default function People({ selectedProject }) {
                 className="pl-8 pr-3 py-2 text-sm border border-ramp-gray-200 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-ramp-gray-300"
               />
             </div>
-            <button className="flex items-center gap-1.5 text-sm text-ramp-gray-600 border border-ramp-gray-200 rounded-lg px-3 py-2 hover:bg-ramp-gray-50">
-              <Filter size={14} />
-              Add filter
-            </button>
           </div>
           <button className="p-2 rounded-lg hover:bg-ramp-gray-50 text-ramp-gray-500"><Download size={16} /></button>
         </div>

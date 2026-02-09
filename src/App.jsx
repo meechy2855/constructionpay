@@ -37,7 +37,6 @@ export default function App() {
         <Route path="/insights" element={<Insights />} />
         <Route path="/search" element={<PlaceholderPage title="Search" />} />
         <Route path="/inbox" element={<Inbox />} />
-        <Route path="/accounting" element={<PlaceholderPage title="Accounting" />} />
         <Route path="/people" element={<People selectedProject={selectedProject} />} />
         <Route path="/settings" element={<PlaceholderPage title="Settings" />} />
       </Routes>

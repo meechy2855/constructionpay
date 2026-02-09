@@ -160,7 +160,7 @@ export default function BillPay({ selectedProject }) {
     if (selectedBill) {
       const id = selectedBill.id;
       if (actionType === 'approve') {
-        setStatusOverrides(prev => ({ ...prev, [id]: { status: 'For Approval' } }));
+        setStatusOverrides(prev => ({ ...prev, [id]: { status: 'Approved' } }));
       } else if (actionType === 'reject') {
         setStatusOverrides(prev => ({ ...prev, [id]: { status: 'Rejected' } }));
       } else if (actionType === 'pay') {

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {
   Search, Inbox, BarChart3, CreditCard,
-  FileText, ShoppingCart, Users, Landmark,
+  FileText, ShoppingCart, Users,
   Settings, ChevronDown, DollarSign, ArrowRight,
 } from 'lucide-react';
 
@@ -15,7 +15,6 @@ const searchPages = [
   { to: '/procurement/purchase-orders', icon: ShoppingCart, label: 'Procurement — Purchase Orders', description: 'Committed POs & invoices' },
   { to: '/bill-pay', icon: FileText, label: 'Bill Pay', description: 'Vendor bills & payments' },
   { to: '/capital', icon: DollarSign, label: 'Capital', description: 'Flex-pay & working capital' },
-  { to: '/accounting', icon: Landmark, label: 'Accounting', description: 'Export & reconciliation' },
   { to: '/people', icon: Users, label: 'People', description: 'Team & card management' },
   { to: '/inbox', icon: Inbox, label: 'Inbox', description: 'Action items & notifications' },
 ];
@@ -160,11 +159,6 @@ const navSections = [
   {
     items: [
       { to: '/capital', icon: DollarSign, label: 'Capital' },
-    ],
-  },
-  {
-    items: [
-      { to: '/accounting', icon: Landmark, label: 'Accounting', badge: 37 },
     ],
   },
   {

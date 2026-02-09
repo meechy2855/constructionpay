@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import {
-  Search, Filter, Calendar, Table2, Download, ChevronDown,
+  Search, Calendar, Table2, Download, ChevronDown,
   Flag, Check, MoreVertical, Landmark, CreditCard, Banknote,
   ShieldAlert, Receipt, SlidersHorizontal, Ban,
 } from 'lucide-react';
@@ -58,14 +58,9 @@ function InboxToolbar({ search, setSearch, rightSlot }) {
             className="pl-8 pr-3 py-2 text-sm border border-ramp-gray-200 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-ramp-gray-300"
           />
         </div>
-        <button className="flex items-center gap-1.5 text-sm text-ramp-gray-600 border border-ramp-gray-200 rounded-lg px-3 py-2 hover:bg-ramp-gray-50">
-          <Filter size={14} />
-          Add filter
-        </button>
       </div>
       <div className="flex items-center gap-1.5">
         {rightSlot}
-        <button className="p-2 rounded-lg hover:bg-ramp-gray-100 text-ramp-gray-500"><Filter size={16} /></button>
         <button className="p-2 rounded-lg hover:bg-ramp-gray-100 text-ramp-gray-500"><Calendar size={16} /></button>
         <button className="p-2 rounded-lg hover:bg-ramp-gray-100 text-ramp-gray-500"><Table2 size={16} /></button>
         <button className="p-2 rounded-lg hover:bg-ramp-gray-100 text-ramp-gray-500"><Download size={16} /></button>

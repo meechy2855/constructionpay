@@ -36,7 +36,7 @@ function RequestsView({ selectedProject, onRowClick, requests }) {
     if (activeTab === 'Needs action') result = result.filter(r => r.status === 'Pending');
     if (activeTab === 'Pending') result = result.filter(r => r.status === 'Pending');
     return result;
-  }, [selectedProject, search, activeTab]);
+  }, [requests, selectedProject, search, activeTab]);
 
   return (
     <div>
@@ -129,7 +129,7 @@ function PurchaseOrdersView({ selectedProject, onRowClick, requests }) {
       );
     }
     return result;
-  }, [selectedProject, search]);
+  }, [requests, selectedProject, search]);
 
   return (
     <div>
