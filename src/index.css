@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ramp-green: #c4f441;
+  --color-ramp-green-dark: #a8d435;
+  --color-ramp-black: #1a1a1a;
+  --color-ramp-gray-50: #fafafa;
+  --color-ramp-gray-100: #f5f5f5;
+  --color-ramp-gray-200: #e5e5e5;
+  --color-ramp-gray-300: #d4d4d4;
+  --color-ramp-gray-400: #a3a3a3;
+  --color-ramp-gray-500: #737373;
+  --color-ramp-gray-600: #525252;
+  --color-ramp-gray-700: #404040;
+  --color-ramp-gray-800: #262626;
+  --color-ramp-gray-900: #171717;
+  --color-status-pending: #f59e0b;
+  --color-status-approved: #22c55e;
+  --color-status-rejected: #ef4444;
+  --color-status-late: #ef4444;
+  --color-status-scheduled: #6366f1;
+  --color-status-missing: #f97316;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: var(--color-ramp-gray-900);
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ramp-gray-300);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ramp-gray-400);
+}
